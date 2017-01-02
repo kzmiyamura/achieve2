@@ -9,12 +9,6 @@ module BlogsHelper
   def get_user_email(user_id)
     if user_id != nil
       User.find(user_id).email
-#      users = User.all
-#      users.each do |user|
-#        if user.id == user_id
-#          user.name
-#        end
-#      end
     end
   end
 end
