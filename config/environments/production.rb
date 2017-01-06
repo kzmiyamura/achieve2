@@ -77,7 +77,11 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
+if Rails.env.development?
   config.action_mailer.default_url_options = { host: 'thawing-sierra-19469' }
+else
+  config.action_mailer.default_url_options = { host: 'thawing-sierra-19469.herokuapp.com'}
+end
   ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.smtp_settings =
   {
