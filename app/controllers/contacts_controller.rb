@@ -5,6 +5,14 @@ class ContactsController < ApplicationController
     else
       @contact = Contact.new
     end
+    if current_user != nil
+      if current_user.name != nil
+        @contact.name = current_user.name
+      end
+      if current_user.email != nil
+        @contact.email = current_user.email
+      end
+    end
   end
 
   def create
