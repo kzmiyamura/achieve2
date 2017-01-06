@@ -11,4 +11,11 @@ class NoticeMailer < ApplicationMailer
     mail to: "kzk_mymr@docomo.ne.jp",
          subject: '【Achieve】ブログが投稿されました'
   end
+
+  def sendmail_contact(contact)
+    @contact = contact
+
+    mail to: contact.email,
+         subject: '【Achieve】お知らせが送信されました'
+  end
 end
