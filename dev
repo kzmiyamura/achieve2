@@ -1,0 +1,59 @@
+<開発開始>
+sudo service postgresql start
+rails s -b $IP -p $PORT
+
+<GitHub>
+--- 最初だけ
+git init
+--- ここから
+git add -A
+git commit -m "first commit"
+--- branch作る時
+git log
+git branch
+git checkout -b develop
+git merge develop
+--- githubへpush
+git push git@github.com:kzmiyamura/achieve2.git master
+git push git@github.com:kzmiyamura/twitter.git master
+
+<heroku>
+--- ログイン
+heroku login
+kzk_mymr@yahoo.co.jp
+miya0216
+--- 初回
+heroku create
+
+heroku apps:info
+
+rake assets:precompile RAILS_ENV=production
+--- gem
+gem 'rails_12factor', group: :production
+
+git add -A
+git commit -m "commit201612312057"
+git push heroku master
+heroku run rake db:migrate RAILS_ENV=production
+heroku config:add SECRET_TOKEN="$(bundle exec rake secret)"
+
+<sql>
+rails c
+Blog.ids
+Blog.all
+user=User.find(4)
+user.blogs
+
+<seed>
+heroku run rake db:seed
+
+http://diveintocode.jp/diver/sign_in
+
+<mail>
+app61509141@heroku.com
+obacp2wm9319
+
+https://thawing-sierra-19469.herokuapp.com//users/confirmation?confirmation_token=Vt3VrisRgDYeWzo1boxj
+
+https://thawing-sierra-19469.herokuapp.com//users/confirmation?confirmation_token=NvC5TVUmzJphWZxdv7zB
+cxH-PobpBzA9nLMzZuX3
