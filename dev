@@ -16,6 +16,9 @@ git merge develop
 --- githubへpush
 git push git@github.com:kzmiyamura/achieve2.git master
 git push git@github.com:kzmiyamura/twitter.git master
+git push git@github.com:kzmiyamura/poem.git master
+git push git@github.com:kzmiyamura/poem2.git master
+git push git@github.com:kzmiyamura/blog.git master
 
 <heroku>
 --- ログイン
