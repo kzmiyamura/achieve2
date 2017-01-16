@@ -68,6 +68,9 @@ https://thawing-sierra-19469.herokuapp.com//users/confirmation?confirmation_toke
 https://thawing-sierra-19469.herokuapp.com//users/confirmation?confirmation_token=NvC5TVUmzJphWZxdv7zB
 cxH-PobpBzA9nLMzZuX3
 
+<error>
+heroku logs --tail
+
 <facebook>
 	
 acheive-develop
