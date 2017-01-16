@@ -11,4 +11,9 @@ module BlogsHelper
       User.find(user_id).email
     end
   end
+  def get_user_name(user_id)
+    if user_id != nil
+      User.find(user_id).name
+    end
+  end
 end
